@@ -22,7 +22,7 @@ public class TwixtGame extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("twixtBoard.fxml"));
         scene = new Scene(root);
         primary.setScene(scene);
-        primary.setTitle("Boggle");
+        primary.setTitle("Twixt");
         primary.show();
     }
 }
