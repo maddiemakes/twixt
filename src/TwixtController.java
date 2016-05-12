@@ -12,9 +12,9 @@ public class TwixtController {
 
     Integer colIndex;
     Integer rowIndex;
-    private ImageInput emptyDot = new ImageInput(new Image("file:/C:/Users/Jordan/Documents/GitHub/twixt/images/emptyDot.png"),-9.5,-1.0);
-    private ImageInput redDot = new ImageInput(new Image("file:/C:/Users/Jordan/Documents/GitHub/twixt/images/redDot.png"),-9.5,-1.0);
-    private ImageInput blueDot = new ImageInput(new Image("file:/C:/Users/Jordan/Documents/GitHub/twixt/images/blueDot.png"),-9.5,-1.0);
+    private ImageInput emptyDot = new ImageInput(new Image("file:images/emptyDot.png"),-9.5,-1.0);
+    private ImageInput redDot = new ImageInput(new Image("file:images/redDot.png"),-9.5,-1.0);
+    private ImageInput blueDot = new ImageInput(new Image("file:images/blueDot.png"),-9.5,-1.0);
 
     //empty dot is 0; red dot is 1; blue dot is 2
     int[][] dots = new int[24][24];
