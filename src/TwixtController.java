@@ -77,17 +77,78 @@ public class TwixtController {
 
     @FXML
     void handleOnMouseClick(MouseEvent event) {
-//        Node source = (Node) event.getSource();
+       // Node source = (Node) event.getSource();
         if (dots[colIndex][rowIndex] == 0) {
             switch (playerColor) {
                 case "red":
                     dots[colIndex][rowIndex] = 1;
+                    connectTheDots(1);
                     playerColor = "blue";
                     break;
                 case "blue":
                     dots[colIndex][rowIndex] = 2;
+                    connectTheDots(2);
                     playerColor = "red";
                     break;
+            }
+        }
+    }
+    void connectTheDots(int player)
+    {
+        if(colIndex < 20 && rowIndex < 19)
+        {
+            if(dots[colIndex+2][rowIndex+3] == player)
+            {
+                // Draw Line
+            }
+        }
+        if(colIndex < 19 && rowIndex < 20)
+        {
+            if(dots[colIndex+3][rowIndex+2] == player)
+            {
+
+            }
+        }
+        if(colIndex < 20 && rowIndex > 3)
+        {
+            if(dots[colIndex+2][rowIndex-3] == player)
+            {
+
+            }
+        }
+        if(colIndex > 2 && rowIndex > 3)
+        {
+            if(dots[colIndex-2][rowIndex-3] == player)
+            {
+
+            }
+        }
+        if(colIndex > 2 && rowIndex < 19)
+        {
+            if(dots[colIndex-2][rowIndex+3] == player)
+            {
+                // Draw Line
+            }
+        }
+        if(colIndex < 19 && rowIndex > 2)
+        {
+            if(dots[colIndex+3][rowIndex-2] == player)
+            {
+
+            }
+        }
+        if(colIndex > 3 && rowIndex < 20)
+        {
+            if(dots[colIndex-3][rowIndex+2] == player)
+            {
+
+            }
+        }
+        if(colIndex > 3 && rowIndex > 2)
+        {
+            if(dots[colIndex-3][rowIndex-2] == player)
+            {
+
             }
         }
     }
