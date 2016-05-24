@@ -58,10 +58,14 @@ public class TwixtController {
         if (dots[colIndex][rowIndex] == 0) {
             switch (playerColor) {
                 case "blue":
-                    source.setEffect(blueDot);
+                    if (colIndex != 0 && colIndex != 23) {
+                        source.setEffect(blueDot);
+                    }
                     break;
                 case "red":
-                    source.setEffect(redDot);
+                    if (rowIndex != 0 && rowIndex != 23) {
+                        source.setEffect(redDot);
+                    }
                     break;
             }
         }
@@ -80,13 +84,17 @@ public class TwixtController {
 //        Node source = (Node) event.getSource();
         if (dots[colIndex][rowIndex] == 0) {
             switch (playerColor) {
-                case "red":
-                    dots[colIndex][rowIndex] = 1;
-                    playerColor = "blue";
-                    break;
                 case "blue":
-                    dots[colIndex][rowIndex] = 2;
-                    playerColor = "red";
+                    if (colIndex != 0 && colIndex != 23) {
+                        dots[colIndex][rowIndex] = 2;
+                        playerColor = "red";
+                    }
+                    break;
+                case "red":
+                    if (rowIndex != 0 && rowIndex != 23) {
+                        dots[colIndex][rowIndex] = 1;
+                        playerColor = "blue";
+                    }
                     break;
             }
         }
