@@ -103,58 +103,59 @@ public class TwixtController {
     }
     void connectTheDots(int player)
     {
-        if(colIndex < 20 && rowIndex < 19)
+        if(colIndex < 20 && rowIndex < 21)
         {
-            if(dots[colIndex+2][rowIndex+3] == player)
+            if(dots[colIndex+2][rowIndex+1] == player)
+            {
+                // Draw Line
+                System.out.println("Connect These...");
+            }
+        }
+        if(colIndex < 21 && rowIndex < 20)
+        {
+            if(dots[colIndex+1][rowIndex+2] == player)
+            {
+
+            }
+        }
+        if(colIndex < 20 && rowIndex > 1)
+        {
+            if(dots[colIndex+2][rowIndex-1] == player)
+            {
+
+            }
+        }
+        if(colIndex > 2 && rowIndex > 1)
+        {
+            if(dots[colIndex-2][rowIndex-1] == player)
+            {
+
+            }
+        }
+        if(colIndex > 2 && rowIndex < 21)
+        {
+            if(dots[colIndex-2][rowIndex+1] == player)
             {
                 // Draw Line
             }
         }
-        if(colIndex < 19 && rowIndex < 20)
+        if(colIndex < 21 && rowIndex > 2)
         {
-            if(dots[colIndex+3][rowIndex+2] == player)
+            if(dots[colIndex+1][rowIndex-2] == player)
             {
 
             }
         }
-        if(colIndex < 20 && rowIndex > 3)
+        if(colIndex > 1 && rowIndex < 20)
         {
-            if(dots[colIndex+2][rowIndex-3] == player)
+            if(dots[colIndex-1][rowIndex+2] == player)
             {
 
             }
         }
-        if(colIndex > 2 && rowIndex > 3)
+        if(colIndex > 1 && rowIndex > 2)
         {
-            if(dots[colIndex-2][rowIndex-3] == player)
-            {
-
-            }
-        }
-        if(colIndex > 2 && rowIndex < 19)
-        {
-            if(dots[colIndex-2][rowIndex+3] == player)
-            {
-                // Draw Line
-            }
-        }
-        if(colIndex < 19 && rowIndex > 2)
-        {
-            if(dots[colIndex+3][rowIndex-2] == player)
-            {
-
-            }
-        }
-        if(colIndex > 3 && rowIndex < 20)
-        {
-            if(dots[colIndex-3][rowIndex+2] == player)
-            {
-
-            }
-        }
-        if(colIndex > 3 && rowIndex > 2)
-        {
-            if(dots[colIndex-3][rowIndex-2] == player)
+            if(dots[colIndex-1][rowIndex-2] == player)
             {
 
             }
