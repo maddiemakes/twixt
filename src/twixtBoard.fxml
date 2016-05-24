@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
@@ -6978,6 +6979,11 @@
 
          </children>
       </GridPane>
+      <Line endX="100.0" fill="BLACK" layoutX="30.0" layoutY="56.0" visible="false" />
+      <Rectangle fill="BLUE" height="3.0" layoutX="32.0" layoutY="54.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="436.0" />
+      <Rectangle fill="BLUE" height="3.0" layoutX="32.0" layoutY="495.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="436.0" />
+      <Rectangle fill="RED" height="435.0" layoutX="29.0" layoutY="58.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+      <Rectangle fill="RED" height="435.0" layoutX="469.0" layoutY="58.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
       <MenuBar prefHeight="25.0" prefWidth="500.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
